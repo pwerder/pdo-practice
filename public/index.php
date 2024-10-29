@@ -7,7 +7,7 @@ use Pwerder\PdoPractice\models\Connection;
 require __DIR__ . '/../bootstrap.php';
 
 $routes = [
-    '/' => 'controllers/index'
+    '/' => 'controllers/indexController'
 ];
 
 try {

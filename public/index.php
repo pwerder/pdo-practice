@@ -7,7 +7,9 @@ use Pwerder\PdoPractice\classes\Uri;
 require __DIR__ . '/../bootstrap.php';
 
 $routes = [
-    '/' => 'controllers/indexController'
+    '/' => 'controllers/indexController',
+    '/user/create' => 'controllers/userCreateController',
+    '/user/store' => 'controllers/userStoreController',
 ];
 
 try {

@@ -2,8 +2,12 @@
 
 namespace Pwerder\PdoPractice\models;
 
+use Pwerder\PdoPractice\traits\PersistDb;
+
 abstract class Model
 {
+    use PersistDb;
+
     protected string $table;
     private $connection;
 

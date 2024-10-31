@@ -10,6 +10,8 @@ $routes = [
     '/' => 'controllers/indexController',
     '/user/create' => 'controllers/userCreateController',
     '/user/store' => 'controllers/userStoreController',
+    '/user/edit' => 'controllers/userEditController',
+    '/user/update' => 'controllers/userUpdateController',
 ];
 
 try {

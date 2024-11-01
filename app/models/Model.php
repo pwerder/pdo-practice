@@ -2,6 +2,7 @@
 
 namespace Pwerder\PdoPractice\models;
 
+use Pwerder\PdoPractice\classes\Bind;
 use Pwerder\PdoPractice\traits\PersistDb;
 
 abstract class Model
@@ -9,11 +10,11 @@ abstract class Model
     use PersistDb;
 
     protected string $table;
-    private $connection;
+    protected $connection;
 
     public function __construct()
     {
-        $this->connection = Connection::connect();
+        $this->connection = Bind::get('connect');
     }
 
     public function all(): array
